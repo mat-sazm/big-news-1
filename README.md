@@ -4,9 +4,9 @@
 
    config/database.php
           | 
-    config/config.php       app/environnement.php       app/err_reporting.php
-           \                        \                           |
-            ----------------------------------------------------|------------------------------
+    config/config.php       app/environnement.php       app/err_reporting.php       app/dbconnect.php
+           \                        \                           |                           /
+            ----------------------------------------------------|----------------------------------------------------------------------------
                                                                 |
                                                             app/app.php
                                                                 |

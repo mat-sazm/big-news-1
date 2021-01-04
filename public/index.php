@@ -6,5 +6,10 @@
 // 1. Intégration du fichier d'exécution de l'application
 require_once "../app/app.php";
 
+
+
+
 echo "index.php <br>";
 var_dump( $env );
+
+echo "<hr>";
