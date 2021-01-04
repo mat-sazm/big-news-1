@@ -70,6 +70,20 @@ require_once "../config/database.php";
  * 4. Définition des variables de routage
  */
 
+
+// Définition de l'uri par défaut
+$uri = "/";
+
+// Définition de la table de routage par défaut
+$routes = [];
+
+// Contient les information de la route courante
+$route = [];
+
+
+require_once "../config/routes.php";
+
+
 /**
  * 5. Definition des exepressions régulières
  */
