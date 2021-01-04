@@ -1,5 +1,9 @@
 <?php
 
+// 1. Creer le fichier database.php
+// 2. Ajouter les variable ci-dessous
+// 3. Modifier les valeurs des variables
+
 // configurations de connections aux bases de données par défaut
 $db_type = "mysql";
 $db_host = null;
