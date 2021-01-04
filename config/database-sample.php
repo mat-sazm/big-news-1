@@ -1,6 +1,6 @@
 <?php
 
-// 1. Creer le fichier database.php
+// 1. Creer le fichier config/database.php
 // 2. Ajouter les variable ci-dessous
 // 3. Modifier les valeurs des variables
 
