@@ -43,16 +43,26 @@ $dev_domains = [
  */
 
 // configurations de connections aux bases de données par défaut
-$db_type = "mysql";
-$db_host = null;
-$db_port = 3306;
-$db_user = null;
-$db_pass = null;
-$db_schema = null;
-$db_charset = "utf8";
+// $db_type = "mysql";
+// $db_host = null;
+// $db_port = 3306;
+// $db_user = null;
+// $db_pass = null;
+// $db_schema = null;
+// $db_charset = "utf8";
 
 // Connection a la bases de données
 $db = null;
+
+// Test de l'existance du fichier "database.php"
+// Si "database.php" n'existe pas on arrete l'application
+if (!file_exists("../config/database.php"))
+{
+    die("Vous devez créer le fichier \"database.php\" dans l'espace de configurations");
+}
+
+// Inclure la config de connexion à la BDD
+require_once "../config/database.php";
 
 
 /**

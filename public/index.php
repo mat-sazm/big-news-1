@@ -6,4 +6,4 @@
 // 1. Intégration du fichier d'exécution de l'application
 require_once "../app/app.php";
 
-var_dump( $env );
+// var_dump( $env );

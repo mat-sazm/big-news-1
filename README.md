@@ -2,7 +2,8 @@
 
 ```txt
 
-
+   config/database.php
+          | 
     config/config.php
            \
             ------------------------
