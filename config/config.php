@@ -42,6 +42,19 @@ $dev_domains = [
  * 3. Définition des variables de base de données
  */
 
+// configurations de connections aux bases de données par défaut
+$db_type = "mysql";
+$db_host = null;
+$db_port = 3306;
+$db_user = null;
+$db_pass = null;
+$db_schema = null;
+$db_charset = "utf8";
+
+// Connection a la bases de données
+$db = null;
+
+
 /**
  * 4. Définition des variables de routage
  */
