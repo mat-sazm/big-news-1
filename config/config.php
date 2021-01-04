@@ -28,7 +28,8 @@ const UTILS_PATH = "../utils/";
 // Environnement de développement ou production ?
 // les valeur peuvent être : "prod" ou "dev"
 // Par défaut, on considère que l'application s'exécute en environnement de PROD
-$env = "prod";
+// $env = "prod";
+$env = null;
 
 // Liste des domaines que l'on considères comme étant des environnements de développement
 $dev_domains = [
