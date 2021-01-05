@@ -31,7 +31,7 @@ if (!empty($_SERVER['REQUEST_URI']))
 // Recherche de l'URI dans le tableau de routage
 foreach ($routes as $route) 
 {
-    // 
+    // On rebase l'information "path" de la déclaration de la route
     $rebase = $base.$route[1];
 
     if ($rebase == $uri) 
