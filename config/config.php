@@ -70,6 +70,8 @@ require_once "../config/database.php";
  * 4. Définition des variables de routage
  */
 
+// Redefini la base d'execution de l'application
+$base = "/public";
 
 // Définition de l'uri par défaut
 $uri = "/";

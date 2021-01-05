@@ -35,6 +35,10 @@ $controller_methode     = null;         // homepage_index
 
 
 echo "<pre>";
+print_r($_SERVER['REQUEST_URI']);
+echo "</pre>";
+
+echo "<pre>";
 print_r($route);
 echo "</pre>";
 

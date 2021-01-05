@@ -31,7 +31,10 @@ if (!empty($_SERVER['REQUEST_URI']))
 // Recherche de l'URI dans le tableau de routage
 foreach ($routes as $route) 
 {
-    if ($route[1] == $uri) 
+    // 
+    $rebase = $base.$route[1];
+
+    if ($rebase == $uri) 
     {
         // Si la route est trouvé dans la table de routage on sort de la boucle
         // grace au mot clé "break;"
