@@ -56,52 +56,23 @@ else {
 /**
  * Intégration du fichier controleur ($controller_path)
  */
+if (!file_exists( $controller_path ))
+{
+    throw new Exception("Le fichier controleur de la route \"".$route[0]."\" est manquant.");
+}
+
+require_once $controller_path;
 
 
 /**
  * Exécution de la fonction du controleur ($controller_methode)
  */
 
+// test l'existance de la fonction du controleur
+if (!function_exists($controller_methode))
+{
+    throw new Exception("La methode \"".$controller_methode."\" de la route \"".$route[0]."\" est manquante.");
+}
 
- 
-
-echo "<pre>";
-print_r($_SERVER['REQUEST_URI']);
-echo "</pre>";
-
-echo "<pre>";
-print_r($route);
-echo "</pre>";
-
-echo "<h3>controller_expression</h3>";
-echo "<pre>";
-var_dump($controller_expression);
-echo "</pre>";
-echo "<pre>";
-print_r($controller_expression);
-echo "</pre>";
-
-echo "<h3>controller_expression_toArray</h3>";
-echo "<pre>";
-var_dump($controller_array);
-echo "</pre>";
-
-echo "<h3>controller_file</h3>";
-echo "<pre>";
-print_r($controller_file);
-echo "</pre>";
-
-echo "<h3>controller_path</h3>";
-echo "<pre>";
-print_r($controller_path);
-echo "</pre>";
-
-echo "<h3>controller_methode</h3>";
-echo "<pre>";
-var_dump($controller_methode);
-echo "</pre>";
-echo "<pre>";
-print_r($controller_methode);
-echo "</pre>";
-
-echo "<hr>";
+// Exécution de la fonction liée à la route
+$controller_methode();
