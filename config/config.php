@@ -15,7 +15,7 @@
  */
 
 // Definition du titre du site
-const WEBSITE_TITLE = "Big News, L'actu.. la grosse Actu !";
+const WEBSITE_TITLE = "Big News";
 
 // Definir le chemin du répertoire "utils"
 const UTILS_PATH = "../utils/";

@@ -1,4 +1,4 @@
-  <?php
+<?php
 /**
  * Fichier de routage de l'application
  * 

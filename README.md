@@ -10,7 +10,7 @@
 config/database.php |                                                                                                                       src/controllers/<PAGE>.php
            \        |                                                                                                                                 |
             \       |                                                                                                                                 |
-            config/config.php       app/environnement.php           app/err_reporting.php           app/dbconnect.php       app/routing.php     app/compile.php
+            config/config.php  >>>  app/environnement.php    >>>    app/err_reporting.php   >>>   app/dbconnect.php  >>>  app/routing.php  >>> app/compile.php
                     \                        \                              |                           /                       /                   /
                      -------------------------------------------------------|-----------------------------------------------------------------------
                                                                             |

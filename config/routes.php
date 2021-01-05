@@ -1,4 +1,4 @@
-  <?php
+<?php
 /**
  * Fichier de définition des routes de l'applications
  * 
@@ -20,13 +20,6 @@ $routes = [
         "/",                // path
         "homepage:index",   // Infos concernat le fichier et la fonction du controleur
         ["HEAD","GET"]      // Methodes autorisées pour la requete
-    ],
-
-
-    [
-        "route_name", 
-        "/route_path", 
-        "route_controller:route_function"
     ],
 
 
@@ -53,11 +46,11 @@ $routes = [
     // Pages de sécurité
     // --
 
-    ["login", "/connexion", "security:login", ["HEAD","GET","POST"]],
-    ["register", "/inscription", "security:register", ["HEAD","GET","POST"]],
-    ["forgotten_password", "/mot-de-passe-oublie", "security:forgotten_password", ["HEAD","GET","POST"]],
-    ["renew_password", "/modifier-mon-mot-de-passe", "security:renew_password", ["HEAD","GET","POST"]],
-    ["logout", "/deconnexion", "security:logout", ["HEAD","GET"]],
+    ["login",               "/connexion",                   "security:login",               ["HEAD","GET","POST"]],
+    ["register",            "/inscription",                 "security:register",            ["HEAD","GET","POST"]],
+    ["forgotten_password",  "/mot-de-passe-oublie",         "security:forgotten_password",  ["HEAD","GET","POST"]],
+    ["renew_password",      "/modifier-mon-mot-de-passe",   "security:renew_password",      ["HEAD","GET","POST"]],
+    ["logout",              "/deconnexion",                 "security:logout",              ["HEAD","GET"]],
 
     
     // User Account
