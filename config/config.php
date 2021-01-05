@@ -80,7 +80,6 @@ $routes = [];
 // Contient les information de la route courante
 $route = [];
 
-
 require_once "../config/routes.php";
 
 

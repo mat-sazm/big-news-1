@@ -46,3 +46,4 @@ require_once "../app/routing.php";
 /**
  * 9. Compilation de la page (part 2 - la compilation finale)
  */
+require_once "../app/compile.php";

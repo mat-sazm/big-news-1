@@ -11,7 +11,7 @@
 
 // Dans le cas ou la variable $routes n'est pas défini (dans le fichier routes.php)
 // On initalise la variable $routes avec un tableau vide
-if (!isset($routes)) 
+if (!isset($routes) || !is_array($routes)) 
 {
     $routes = [];
 }
@@ -19,7 +19,10 @@ if (!isset($routes))
 // Récupération de l'uri courant
 if (!empty($_SERVER['REQUEST_URI'])) 
 {
+    // /connexion
     $uri = $_SERVER['REQUEST_URI']; // Récupération de l'URI avec eventuel paramètres
+
+    // $uri[0] = "/connexion
     $uri = explode("?", $uri); // Séparation de l'URI est des paramètres
     $uri = $uri[0]; // Récupération de l'URI sans paramètre
 }
@@ -36,18 +39,3 @@ foreach ($routes as $route)
         break;
     }
 }
-
-
-
-
-
-echo "<hr>";
-var_dump( $_SERVER['REQUEST_URI'] );
-
-echo "<hr>";
-var_dump( $uri );
-echo "<hr>";
-echo "<pre>";
-print_r( $route );
-echo "</pre>";
-echo "<hr>";
