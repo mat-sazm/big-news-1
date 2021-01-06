@@ -46,10 +46,14 @@ foreach ($routes as $route)
     {
         $path = substr($path, 0, -1);
     }
+
+    // Permet de supprimer le "/" de fin de la chaine $uri 
+    // ce cas arrive lorsque l'utilisateur ou le navigateur ajoute un "/" à la fin de l'adresse de la page
     if (substr($uri, -1) === "/")
     {
         $uri = substr($uri, 0, -1);
     }
+    
 
     if ($path == $uri) 
     {

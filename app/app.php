@@ -38,7 +38,7 @@ require_once "../app/routing.php";
 /**
  * 7. Inclusion des fonctions "Utils"
  */
-include_once "../utils/url.php";
+require_once "../app/utils.php";
 
 /**
  * 8. Compilation de la page (part 1 - Le controleur principal)

@@ -51,7 +51,5 @@ function security_logout()
     // Traitement des données
     session_destroy();
 
-    // header("location: ". url("homepage"));
-    header("location: /categories");
-    exit;
+    redirectToRoute("homepage");
 }
