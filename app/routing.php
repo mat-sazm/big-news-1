@@ -46,7 +46,10 @@ foreach ($routes as $route)
     {
         $path = substr($path, 0, -1);
     }
-
+    if (substr($uri, -1) === "/")
+    {
+        $uri = substr($uri, 0, -1);
+    }
 
     if ($path == $uri) 
     {
