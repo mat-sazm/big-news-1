@@ -72,7 +72,7 @@ require_once "../config/database.php";
 
 // Redefinir la base d'execution de l'application
 $base = "/public";
-$base = "";
+// $base = "";
 
 // Définition de l'uri par défaut
 $uri = "/";

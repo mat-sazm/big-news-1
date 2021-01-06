@@ -24,25 +24,25 @@ if (!isset($route[2]) || empty($route[2]))
 }
 
 // Initialisation des variables qui définiront le fichier et la fonction à exécuter
-$controller_expression  = $route[2];    // homepage:index
-$controller_file        = null;         // homepage
+// Route :     ["article_read", "/article", "article:read", ["HEAD", "GET"]],
+$controller_expression  = $route[2];    // article:read
+$controller_file        = null;         // article
 $controller_path        = null;         // "../src/controllers/".$controller_file.".php";
-$controller_methode     = null;         // homepage_index
+$controller_methode     = null;         // article_read
 
 // Convertion de la chaine $controller_expression en tableau
-// $controller_array[0]; // homepage
-// $controller_array[1]; // index ou null
+// $controller_array[0]; // article
+// $controller_array[1]; // read ou null
 $controller_array = explode(":", $controller_expression);
 
 
 
-// -- Définition du fichier controleur ($controller_file = "homepage")
+// -- Définition du fichier controleur ($controller_file = "article")
 $controller_file = $controller_array[0];
 $controller_path = "../src/controllers/".$controller_file.".php";
 
 // -- Définition de la fonction à exécuter
 $controller_methode = isset($controller_array[1]) ? $controller_array[1] : null;
-
 
 if ($controller_methode !== null && !empty($controller_methode)) 
 {

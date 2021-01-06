@@ -3,7 +3,9 @@
 ```txt
 
 
-
+                                                                                                                                            src/views/layout/header.php       src/views/layout/footer.php
+                                                                                                                                                               \                 /
+                                                                                                                                                                \               /
                                                                                                                                 src/models/<PAGE>.php       src/views/<PAGE>/<SECTION>.php
             config/routes.php                                                                                                               |                       |
                     |                                                                                                                       |                       |
@@ -18,6 +20,6 @@ config/database.php |                                                           
                                                                             |
 ----------------------------------------------------------------------------|-----------------------------------------------------------------------
                                                                             |
-                                                                    public/index.php
+                                                                     public/index.php
 
 ```

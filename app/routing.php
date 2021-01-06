@@ -39,6 +39,15 @@ foreach ($routes as $route)
         $path = $base.$route[1];
     }
 
+    // $path = "/public/"
+    // substr($path, -1) ; // "/" slash de fin
+    // substr($path, 0, -1); // /public
+    if (substr($path, -1) === "/")
+    {
+        $path = substr($path, 0, -1);
+    }
+
+
     if ($path == $uri) 
     {
         // Si la route est trouvé dans la table de routage on sort de la boucle

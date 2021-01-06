@@ -27,7 +27,7 @@ $routes = [
     // --
 
     // Index des articles
-    ["article_index", "/articles", "article:index", ["HEAD", "GET"]],
+    ["article_index", "/tous-nos-articles", "article:index", ["HEAD", "GET"]],
 
     // Read article
     ["article_read", "/article", "article:read", ["HEAD", "GET"]],
@@ -37,7 +37,7 @@ $routes = [
     // --
 
     // Index des categories
-    ["category_index", "/categories", "category:index", ["HEAD", "GET"]],
+    ["category_index", "/nos-categories", "category:index", ["HEAD", "GET"]],
 
     // Read category
     ["category_read", "/category", "category:read", ["HEAD", "GET"]],
@@ -46,7 +46,7 @@ $routes = [
     // Pages de sécurité
     // --
 
-    ["login",               "/connexion",                   "security:login",               ["HEAD","GET","POST"]],
+    ["login",               "/connectez-vous",                   "security:login",               ["HEAD","GET","POST"]],
     ["register",            "/inscription",                 "security:register",            ["HEAD","GET","POST"]],
     ["forgotten_password",  "/mot-de-passe-oublie",         "security:forgotten_password",  ["HEAD","GET","POST"]],
     ["renew_password",      "/modifier-mon-mot-de-passe",   "security:renew_password",      ["HEAD","GET","POST"]],
